@@ -9,4 +9,4 @@ Se visualiza lo que explica el comando y luego se visualiza el comando.
 
 ## Ejecución del programa en Java
 - "El ejecutor VJM ejecuta en la carpeta actual el archivo Principal.class"
-- java -co . Principal
+- java -cp . Principal
