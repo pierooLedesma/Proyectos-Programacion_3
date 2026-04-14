@@ -98,7 +98,7 @@ Ejecuta el sistema desde el archivo ".jar" principal.
 Manifest-Version: 1.0
 Created-By: Alessandro Piero Ledesma Guerra
 Class-Path: medicalsoftRRHHModel.jar medicalsoftInfraModel.jar medicalsoftServModel.jar
-Main-Class: com.medicalsoft.program.main.Principal
+Main-Class: com/medicalsoft/program/main/Principal
 
 ```
 
