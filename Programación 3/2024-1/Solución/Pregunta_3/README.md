@@ -1,16 +1,16 @@
-# MedicalSoft - Construcci¨®n del Proyecto
+# MedicalSoft - ConstrucciÃ³n del proyecto de la Pregunta 3
 
-## Descripci¨®n General
+## DescripciÃ³n General
 
 Describir el proceso completo para compilar, empaquetar y
-ejecutar el sistema "MedicalSoft", as¨ª como la configuraci¨®n necesaria del
+ejecutar el sistema "MedicalSoft", asÃ­ como la configuraciÃ³n necesaria del
 archivo "MANIFEST.MF".
 
 ------------------------------------------------------------------------
 
 # INSTRUCCIONES EJECUTADAS
 
-## 1. Compilar m¨®dulo RRHH
+## 1. Compilar mÃ³dulo RRHH
 
 ``` bash
 javac -cp . com/medicalsoft/rrhh/model/*.java
@@ -20,7 +20,7 @@ Compila las clases base del sistema.
 
 ------------------------------------------------------------------------
 
-## 2. Generar librer¨ªa "medicalsoftRRHHModel.jar"
+## 2. Generar librerÃ­a "medicalsoftRRHHModel.jar"
 
 ``` bash
 jar cvf medicalsoftRRHHModel.jar com/medicalsoft/rrhh/model/*.class
@@ -30,18 +30,18 @@ Empaqueta las clases compiladas en el archivo "medicalsoftRRHHModel.jar".
 
 ------------------------------------------------------------------------
 
-## 3. Compilar m¨®dulo Infraestructura
+## 3. Compilar mÃ³dulo Infraestructura
 
 ``` bash
 javac -cp medicalsoftRRHHModel;. com/medicalsoft/infraestructura/model/*.java
 ```
 
-Compila el m¨®dulo de infraestructura usando la librer¨ªa de RRHH como
+Compila el mÃ³dulo de infraestructura usando la librerÃ­a de RRHH como
 dependencia (medicalsoftRRHHModel.jar).
 
 ------------------------------------------------------------------------
 
-## 4. Generar librer¨ªa "medicalsoftInfraModel.jar"
+## 4. Generar librerÃ­a "medicalsoftInfraModel.jar"
 
 ``` bash
 jar cvf medicalsoftInfraModel.jar com/medicalsoft/infraestructura/model/*.class
@@ -51,24 +51,24 @@ Crea el componente de infraestructura denominado "medicalsoftInfraModel.jar".
 
 ------------------------------------------------------------------------
 
-## 5. Compilar m¨®dulo Servicios
+## 5. Compilar mÃ³dulo Servicios
 
 ``` bash
 javac -cp medicalsoftRRHHModel.jar;medicalsoftInfraModel.jar;. com/medicalsoft/servicios/model/*.java
 ```
 
-Compila las clases contenidas en "servicios/model" utilizando las librer¨ªas previas
+Compila las clases contenidas en "servicios/model" utilizando las librerÃ­as previas
 que son las siguientes: "medicalsoftRRHHModel.jar" y "medicalsoftInfraModel.jar".
 
 ------------------------------------------------------------------------
 
-## 6. Generar librer¨ªa "medicalsoftServModel.jar"
+## 6. Generar librerÃ­a "medicalsoftServModel.jar"
 
 ``` bash
 jar cvf medicalsoftServModel.jar com/medicalsoft/servicios/model/*.class
 ```
 
-Empaqueta el m¨®dulo de servicios llamado "medicalsoftServModel.jar".
+Empaqueta el mÃ³dulo de servicios llamado "medicalsoftServModel.jar".
 
 ------------------------------------------------------------------------
 
@@ -78,11 +78,11 @@ Empaqueta el m¨®dulo de servicios llamado "medicalsoftServModel.jar".
 javac -cp medicalsoftRRHHModel.jar;medicalsoftInfraModel.jar;medicalsoftServModel.jar;. com/medicalsoft/program/main/*.java
 ```
 
-Compila la clase principal del sistema "Principal.java" con las tres librer¨ªas ".jar" generados anteriormente.
+Compila la clase principal del sistema "Principal.java" con las tres librerÃ­as ".jar" generados anteriormente.
 
 ------------------------------------------------------------------------
 
-## 8. Ejecutar la aplicaci¨®n
+## 8. Ejecutar la aplicaciÂ¨Â®n
 
 ``` bash
 java -jar medicalsoftPrincipal.jar
@@ -99,8 +99,9 @@ Manifest-Version: 1.0
 Created-By: Alessandro Piero Ledesma Guerra
 Class-Path: medicalsoftRRHHModel.jar medicalsoftInfraModel.jar medicalsoftServModel.jar
 Main-Class: com.medicalsoft.program.main.Principal
+
 ```
 
 Importante:
-- Asegurar un salto de l¨ªnea al final del archivo.
-- Todas las librer¨ªas deben estar en el mismo directorio que el ".jar" principal.
+- Asegurar un salto de lÃ­nea al final del archivo.
+- Todas las librerÃ­as deben estar en el mismo directorio que el ".jar" principal.
