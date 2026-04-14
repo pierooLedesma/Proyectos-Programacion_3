@@ -1,13 +1,13 @@
-# MedicalSoft - Guía de Compilación y Ejecución de la Pregunta 2
+# MedicalSoft - Gu铆a de Compilaci贸n y Ejecuci贸n de la Pregunta 2
 
-## Descripción General
+## Descripci贸n General
 
-Se explica paso a paso cómo compilar y ejecutar el proyecto
+Se explica paso a paso c贸mo compilar y ejecutar el proyecto
 "MedicalSoft" utilizando comandos en Java desde la consola.
 
 ------------------------------------------------------------------------
 
-## 1. Compilación del paquete de Recursos Humanos (Modelo)
+## 1. Compilaci贸n del paquete de Recursos Humanos (Modelo)
 
 ### Comando
 
@@ -15,7 +15,7 @@ Se explica paso a paso cómo compilar y ejecutar el proyecto
 javac -cp . com/medicalsoft/rrhh/model/*.java
 ```
 
-### Descripción
+### Descripci贸n
 
 Este comando compila todas las clases Java ubicadas en el paquete model
 del paquete de recursos humanos.
@@ -26,7 +26,7 @@ del paquete de recursos humanos.
 
 ------------------------------------------------------------------------
 
-## 2. Compilación del paquete de Infraestructura
+## 2. Compilaci贸n del paquete de Infraestructura
 
 ### Comando
 
@@ -34,7 +34,7 @@ del paquete de recursos humanos.
 javac -cp . com/medicalsoft/infraestructura/model/*.java
 ```
 
-### Descripción
+### Descripci贸n
 
 Compila las clases relacionadas con la infraestructura del sistema, como
 acceso a datos, archivos o conexiones externas.
@@ -45,7 +45,7 @@ acceso a datos, archivos o conexiones externas.
 
 ------------------------------------------------------------------------
 
-## 3. Compilación del paquete de Servicios
+## 3. Compilaci贸n del paquete de Servicios
 
 ### Comando
 
@@ -53,9 +53,9 @@ acceso a datos, archivos o conexiones externas.
 javac -cp . com/medicalsoft/servicios/model/*.java
 ```
 
-### Descripción
+### Descripci贸n
 
-Este comando compila la lógica de negocio del sistema.
+Este comando compila la l贸gica de negocio del sistema.
 
 -   javac: el compilador de Java\
 -   -cp .: indica que se use el directorio actual\
@@ -63,7 +63,7 @@ Este comando compila la lógica de negocio del sistema.
 
 ------------------------------------------------------------------------
 
-## 4. Compilación del paquete Principal
+## 4. Compilaci贸n del paquete Principal
 
 ### Comando
 
@@ -71,14 +71,14 @@ Este comando compila la lógica de negocio del sistema.
 javac -cp . com/medicalsoft/program/main/*.java
 ```
 
-### Descripción
+### Descripci贸n
 
 Compila las clase "Principal.class" que incluye la clase que
-contiene el método main.
+contiene el m茅todo main.
 
 ------------------------------------------------------------------------
 
-## 5. Ejecución del programa
+## 5. Ejecuci贸n del programa
 
 ### Comando
 
@@ -86,14 +86,14 @@ contiene el método main.
 java -cp . com/medicalsoft/program/main/Principal
 ```
 
-### Descripción
+### Descripci贸n
 
-Ejecuta la aplicación llamando a la clase principal llamada "Principal".
+Ejecuta la aplicaci贸n llamando a la clase principal llamada "Principal".
 
 -   java: ejecuta el programa\
 -   -cp .: usa el classpath actual\
--   Principal: clase donde está el método main
+-   Principal: clase donde est谩 el m茅todo main
 
-Aquí es donde inicia todo el sistema.
+Aqu铆 es donde inicia todo el sistema.
 
 ------------------------------------------------------------------------
