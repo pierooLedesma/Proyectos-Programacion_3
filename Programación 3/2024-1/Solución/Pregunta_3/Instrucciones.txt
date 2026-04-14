@@ -1,0 +1,32 @@
+INTRUCCIONES EJECUTADAS:
+
+Compilar las clases contenidas en "com/medicalsoft/rrhh/model":
+javac -cp . com/medicalsoft/rrhh/model/*.java
+
+Generar el componente, o también llamada librería, "medicalsoftRRHHModel.jar":
+jar cvf medicalsoftRRHHModel.jar com/medicalsoft/rrhh/model/*.class
+
+Compilar las clases contenidas en "com/medicalsoft/infraestructura/model" con la librería "medicalsoftRRHHModel.jar":
+javac -cp medicalsoftRRHHModel;. com/medicalsoft/infraestructura/model/*.java
+
+Generar el componente "medicalsoftInfraModel.jar":
+jar cvf medicalsoftInfraModel.jar com/medicalsoft/infraestructura/model/*.class
+
+Compilar las clases contenidas en "com/medicalsoft/servicios/model" con las librerías "medicalsoftRRHHModel.jar" y "medicalsoftInfraModel.jar":
+javac -cp medicalsoftRRHHModel.jar;medicalsoftInfraModel.jar;. com/medicalsoft/servicios/model/*.java
+
+Generar el componente "medicalsoftServModel.jar":
+jar cvf medicalsoftServModel.jar com/medicalsoft/servicios/model/*.class
+
+Compilar las clase contenida en "com/medicalsoft/program/main":
+javac -cp medicalsoftRRHHModel.jar;medicalsoftInfraModel.jar;medicalsoftServModel.jar;. com/medicalsoft/program/main/*.java
+
+Comprobar que funcione:
+java -jar medicalsoftPrincipal.jar
+
+
+Contenido que debe de ir en "MANIFEST.MF" (con un salto de línea al final):
+Manifest-Version: 1.0
+Created-By: Alessandro Piero Ledesma Guerra
+Class-Path: medicalsoftRRHHModel.jar medicalsoftInfraModel.jar medicalsoftServModel.jar
+Main-Class: com/medicalsoft/program/main/Principal
