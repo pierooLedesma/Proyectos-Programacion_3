@@ -37,7 +37,7 @@ javac -cp . com/medicalsoft/infraestructura/model/*.java
 ### Descripción
 
 Compila las clases relacionadas con la infraestructura del sistema, como
-acceso a datos, archivos o conexiones externas.
+acceso a datos.
 
 -   javac: compilador de Java
 -   -cp .: Usar el directorio actual
