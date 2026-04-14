@@ -21,7 +21,7 @@ Este comando compila todas las clases Java ubicadas en el paquete model
 del paquete de recursos humanos.
 
 -   javac: compilador de Java
--   -cp .: indica que se use el directorio actual como classpath
+-   -cp . : indica que se use el directorio actual como classpath
 -   \*.java: compila todos los archivos Java del paquete
 
 ------------------------------------------------------------------------
@@ -40,7 +40,7 @@ Compila las clases relacionadas con la infraestructura del sistema, como
 acceso a datos.
 
 -   javac: compilador de Java
--   -cp .: Usar el directorio actual
+-   -cp . : Usar el directorio actual
 -   \*.java: compila todos los archivos ".java" de este paquete
 
 ------------------------------------------------------------------------
@@ -58,7 +58,7 @@ javac -cp . com/medicalsoft/servicios/model/*.java
 Este comando compila la lógica de negocio del sistema.
 
 -   javac: el compilador de Java
--   -cp .: indica que se use el directorio actual
+-   -cp . : indica que se use el directorio actual
 -   \*.java: compila todos los archivos Java del paquete
 
 ------------------------------------------------------------------------
@@ -90,7 +90,7 @@ java -cp . com/medicalsoft/program/main/Principal
 Ejecuta la aplicación llamando a la clase principal llamada "Principal".
 
 -   java: ejecuta el programa
--   -cp .: usa el classpath actual
+-   -cp . : usa el classpath actual
 -   Principal: clase donde está el método main
 
 Aquí es donde inicia todo el sistema.
