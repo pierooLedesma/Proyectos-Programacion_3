@@ -7,7 +7,7 @@ Se explica paso a paso cómo compilar y ejecutar el proyecto
 
 ------------------------------------------------------------------------
 
-## 1. Compilación del paquete de Recursos Humanos (Modelo)
+## 1. Compilación del paquete de Recursos Humanos
 
 ### Comando
 
@@ -20,8 +20,8 @@ javac -cp . com/medicalsoft/rrhh/model/*.java
 Este comando compila todas las clases Java ubicadas en el paquete model
 del paquete de recursos humanos.
 
--   javac: compilador de Java\
--   -cp .: indica que se use el directorio actual como classpath\
+-   javac: compilador de Java
+-   -cp .: indica que se use el directorio actual como classpath
 -   \*.java: compila todos los archivos Java del paquete
 
 ------------------------------------------------------------------------
@@ -39,8 +39,8 @@ javac -cp . com/medicalsoft/infraestructura/model/*.java
 Compila las clases relacionadas con la infraestructura del sistema, como
 acceso a datos, archivos o conexiones externas.
 
--   javac: compilador de Java\
--   -cp .: Usar el directorio actual\
+-   javac: compilador de Java
+-   -cp .: Usar el directorio actual
 -   \*.java: compila todos los archivos ".java" de este paquete
 
 ------------------------------------------------------------------------
@@ -57,8 +57,8 @@ javac -cp . com/medicalsoft/servicios/model/*.java
 
 Este comando compila la lógica de negocio del sistema.
 
--   javac: el compilador de Java\
--   -cp .: indica que se use el directorio actual\
+-   javac: el compilador de Java
+-   -cp .: indica que se use el directorio actual
 -   \*.java: compila todos los archivos Java del paquete
 
 ------------------------------------------------------------------------
@@ -73,8 +73,7 @@ javac -cp . com/medicalsoft/program/main/*.java
 
 ### Descripción
 
-Compila las clase "Principal.class" que incluye la clase que
-contiene el método main.
+Compila las clase "Principal.class" que contiene el método main.
 
 ------------------------------------------------------------------------
 
@@ -90,8 +89,8 @@ java -cp . com/medicalsoft/program/main/Principal
 
 Ejecuta la aplicación llamando a la clase principal llamada "Principal".
 
--   java: ejecuta el programa\
--   -cp .: usa el classpath actual\
+-   java: ejecuta el programa
+-   -cp .: usa el classpath actual
 -   Principal: clase donde está el método main
 
 Aquí es donde inicia todo el sistema.
