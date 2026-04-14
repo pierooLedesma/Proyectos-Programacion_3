@@ -82,7 +82,7 @@ Compila la clase principal del sistema "Principal.java" con las tres librerías 
 
 ------------------------------------------------------------------------
 
-## 8. Ejecutar la aplicaci¨®n
+## 8. Ejecutar la aplicación
 
 ``` bash
 java -jar medicalsoftPrincipal.jar
