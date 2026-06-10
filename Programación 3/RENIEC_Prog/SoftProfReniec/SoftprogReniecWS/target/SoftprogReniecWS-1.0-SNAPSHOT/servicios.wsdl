@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:tns="http://services.softprogreniec.pucp.edu.pe/"
+        targetNamespace="http://services.softprogreniec.pucp.edu.pe/"
+        name="SoftProgServices">
+
+    <wsdl:import namespace="http://services.softprogreniec.pucp.edu.pe/"
+                 location="http://localhost:8080/SoftprogReniecWS-1.0-SNAPSHOT/PersonasWS?wsdl"/>
+</wsdl:definitions>

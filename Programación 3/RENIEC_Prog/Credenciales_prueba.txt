@@ -1,0 +1,6 @@
+Credenciales:
+Nombre del servidor (host): db-reniec.crgmyccwodkh.us-east-1.rds.amazonaws.com
+Puerto (port): 1433
+Nombre de la base de datos (Database) o esquema (schema): master
+usuario (user ID): admin
+contraseña (password): claveprog3202601
